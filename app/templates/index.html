@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<stopwatch></stopwatch>
+{% endblock %}
+
+{% block latehead %}
+<script src="/static/js/index.js"></script>
+<script src="/static/js/lib/riot+compiler.js"></script>
+<script type="riot/tag" src="/static/js/stopwatch.tag"></script>
+<script>riot.mount('stopwatch')</script>
+{% endblock %}
